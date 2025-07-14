@@ -5,9 +5,9 @@ import App from "../components/App";
 import { CATEGORIES } from "../data";
 
 test("displays a button for each category", () => {
-  render(<CategoryFilter categories={CATEGORIES} />);
+  render(<App />);
   for (const category of CATEGORIES) {
-    expect(screen.queryByText(category)).toBeInTheDocument();
+    expect(screen.queryByRole("button", {name: category})).toBeInTheDocument();
   }
 });
 
