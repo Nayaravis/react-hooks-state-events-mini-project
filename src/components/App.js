@@ -3,7 +3,6 @@ import CategoryFilter from "./CategoryFilter";
 import NewTaskForm from "./NewTaskForm";
 import TaskList from "./TaskList";
 import { TaskContextProvider } from "../context";
-import { TaskContextProvider } from "../context";
 
 import { CATEGORIES } from "../data";
 
